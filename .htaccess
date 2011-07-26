@@ -1,0 +1,42 @@
+Options -Indexes
+RewriteEngine On
+
+# redirect to 'www.skincareheadlines.com' if somebody types 'skincareheadlines.com'
+RewriteCond %{HTTP_HOST} ^skincareheadlines\.com [NC]
+RewriteRule (.*) http://www.skincareheadlines.com/$1 [R=301,L]
+
+# loading default 01 page
+RewriteRule ^(/?|index.php|index.html|index.htm)$ /01/?%{QUERY_STRING} [L]
+
+# loading default 01 page and set ref variable via mod_rewrite and
+RewriteRule ^(news|wrinkles|antiaging)/([a-zA-Z0-9]+)/?$ /01/?ref=$2&%{QUERY_STRING} [L]
+# loading default 01 page and set ref and data1 variables via mod_rewrite
+RewriteRule ^(news|wrinkles|antiaging)/([a-zA-Z0-9]+)/([a-zA-Z0-9\-]+)/?$ /01/?ref=$2&data1=$3&%{QUERY_STRING} [L]
+# loading default 01 page and set ref, data1 and data2 variables via mod_rewrite
+RewriteRule ^(news|wrinkles|antiaging)/([a-zA-Z0-9]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/?$ /01/?ref=$2&data1=$3&data2=$4&%{QUERY_STRING} [L]
+
+# loading any page and set ref variable via mod_rewrite and
+RewriteRule ^([0-9]{2})/(news|wrinkles|antiaging)/([a-zA-Z0-9]+)/?$ /$1/?ref=$3&%{QUERY_STRING} [L]
+# loading any page and set ref and data1 variables via mod_rewrite
+RewriteRule ^([0-9]{2})/(news|wrinkles|antiaging)/([a-zA-Z0-9]+)/([a-zA-Z0-9\-]+)/?$ /$1/?ref=$3&data1=$4&%{QUERY_STRING} [L]
+# loading any page and set ref, data1 and data2 variables via mod_rewrite
+RewriteRule ^([0-9]{2})/(news|wrinkles|antiaging)/([a-zA-Z0-9]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/?$ /$1/?ref=$3&data1=$4&data2=$5&%{QUERY_STRING} [L]
+
+### overwrite click links actions - BEGIN
+# ClickBooth only - 8e699407 - BEGIN
+RewriteRule ^products/lifecell/8e699407/?$ http://www.lifecellskin.com/cb/skh.php?%{QUERY_STRING} [R=301,L]
+# redirect to lifecellskin.com with ref and data1 variables via mod_rewrite
+RewriteRule ^products/lifecell/8e699407/([a-zA-Z0-9\-]+)/?$ http://www.lifecellskin.com/cb/skh.php?data1=$1&%{QUERY_STRING} [R=301,L]
+# redirect to lifecellskin.com with ref, data1 and data2 variables via mod_rewrite
+RewriteRule ^products/lifecell/8e699407/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/?$ http://www.lifecellskin.com/cb/skh.php?data1=$1&data2=$2&%{QUERY_STRING} [R=301,L]
+# ClickBooth only - END
+
+# redirect to lifecellskin.com via mod_rewrite
+RewriteRule ^products/lifecell/?$ http://www.lifecellskin.com/special-offer/?%{QUERY_STRING} [R=301,L]
+# redirect to lifecellskin.com with ref variable via mod_rewrite
+RewriteRule ^products/lifecell/([a-zA-Z0-9]+)/?$ http://www.lifecellskin.com/special-offer-$1/?%{QUERY_STRING} [R=301,L]
+# redirect to lifecellskin.com with ref and data1 variables via mod_rewrite
+RewriteRule ^products/lifecell/([a-zA-Z0-9]+)/([a-zA-Z0-9\-]+)/?$ http://www.lifecellskin.com/special-offer-$1/?data1=$2&%{QUERY_STRING} [R=301,L]
+# redirect to lifecellskin.com with ref, data1 and data2 variables via mod_rewrite
+RewriteRule ^products/lifecell/([a-zA-Z0-9]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/?$ http://www.lifecellskin.com/special-offer-$1/?data1=$2&data2=$3&%{QUERY_STRING} [R=301,L]
+### overwrite click links actions - END

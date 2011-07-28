@@ -36,7 +36,7 @@ include('includes/top.php');
 			<div id="content">	<!--content-->
 				<div id="main_content">	<!--main_content-->
 					<div id="top_main_content">	<!--top_main_content-->
-						<div class="first_name_title">Featured Article</div>
+						<div class="first_name_title">FEATURED ARTICLE</div>
 						<div class="icon_second_name">
 						</div>
 						<div class="second_name_title">
@@ -223,14 +223,15 @@ The Appearance Of Wrinkles Vanish In 17 Seconds
 							<p>
 								Pictures Show Stunning Transformations With LifeCell
 							</p>
-							<div>
-								<div style="float: left; width: 111px;">
+							<div style="width: 230px; margin: 0 auto;">
+<!--								<div style="float: left; width: 111px;">-->
 									<img src="images/photo_etta_walker-before.png"/>
-								</div>
-								<div style="float:right">
+<!--								</div>-->
+<!--								<div style="float:right">-->
 									<img src="images/photo_etta_walker-after.png"/>
-								</div>
+<!--								</div>-->
 							</div>
+                                                        <div class="clr"></div>
 							<p class="for_black">
 									Etta Walker, Age 41 <br/>
 									Sacramento, CA
@@ -245,9 +246,30 @@ The Appearance Of Wrinkles Vanish In 17 Seconds
 							</p>
 						</div>
 
-						<!--2th post-->
+
+						<!--3rd post-->
+                                                <div class="post_note">
+                                                    <div style="width: 220px; margin: 0 auto;">
+								<img src="images/BA_olga.jpg" style="width: 220px;"/>
+							</div>
+							<p class="for_black">
+								Olga Suarez, 87 years old<br/>
+								World Famous Ballerina
+							</p>
+							<p>
+								"I am 87 years old. I was born during World War I. And if I had a dollar for every anti-wrinkle and anti-aging product that I've used during the last 87 years that did not work, I would probably have enough money to buy a skin care company and make a product that actually did work. "
+							</p>
+							<p>
+								Well, I don't have the dollars, but I did find a product that actually works. After so many disappointments, I've become a complete cynic when it comes to anti-wrinkle and anti-aging systems, but LifeCell really restored my faith.
+							</p>
+							<p>
+								It's a good, old-fashioned "get what you pay for" type of, all-in-one, anti-aging skin care system. That's just so convenient. Besides, the price tag for LifeCell is a lot less painful than an injection.It's tough to make 87 year old skin look younger and I know because I've tried all the products available. After using LifeCell for about 2 months my skin now looks and feels like that of a 65-year old. I can whole-heartedly say that I would recommend LifeCell to anyone who wanted to look younger."
+							</p>
+						</div>
+
+                                                <!--2th post-->
 						<div class="post_note">
-                                                        <div>
+                                                        <div style="width: 230px; margin: 0 auto;">
                                                                     <img src="images/Maurio_before_after.gif" style="width: 230px;"/>
 							</div>
 							<p class="for_black">
@@ -269,32 +291,12 @@ The Appearance Of Wrinkles Vanish In 17 Seconds
 
 						</div>
 
-						<!--3rd post-->
-                                                <div class="post_note">
-							<div>
-								<img src="images/BA_olga.jpg" style="width: 220px;"/>
-							</div>
-							<p class="for_black">
-								Olga Suarez, 87 years old<br/>
-								World Famous Ballerina
-							</p>
-							<p>
-								"I am 87 years old. I was born during World War I. And if I had a dollar for every anti-wrinkle and anti-aging product that I've used during the last 87 years that did not work, I would probably have enough money to buy a skin care company and make a product that actually did work. "
-							</p>
-							<p>
-								Well, I don't have the dollars, but I did find a product that actually works. After so many disappointments, I've become a complete cynic when it comes to anti-wrinkle and anti-aging systems, but LifeCell really restored my faith.
-							</p>
-							<p>
-								It's a good, old-fashioned "get what you pay for" type of, all-in-one, anti-aging skin care system. That's just so convenient. Besides, the price tag for LifeCell is a lot less painful than an injection.It's tough to make 87 year old skin look younger and I know because I've tried all the products available. After using LifeCell for about 2 months my skin now looks and feels like that of a 65-year old. I can whole-heartedly say that I would recommend LifeCell to anyone who wanted to look younger."
-							</p>
-						</div>
-
 
 
 
 						<!--5th post-->
 						<div class="post_note">
-							<div>
+                                                    <div style="width: 235px; margin: 0 auto;">
 								<img src="images/BA_collen.jpg" style="width: 235px;"/>
 							</div>
 							<p class="for_black">
@@ -324,59 +326,7 @@ The Appearance Of Wrinkles Vanish In 17 Seconds
 					<div class="clr"></div><!--clear-->
 				</div>	<!--end content-->
 			</div>
-			<div id="sidebar">
-				<div class="daily_deal">
-					<div class="btn_goto_deal">
-						<a href="<?=$lifecell_link?>"><img src="images/btn_go_to_deal.png"/></a>
-					</div>
-				</div>
-				<div class="sidebar_content">
-					<div class="tell_us">
-						<div class="tell_us_content">
-							We'd love to hear how LifeCell is working for you.
-							<p>
-								LifeCell is offering Skin Care Headline Readers a 30-day trial today, while supplies last. All you have to pay today is $1.25 for shipping and handling.
-							</p>							
-							<p>
-								To take advantage of this special offer while trials are still available, all you have to do is simply go to <a href="<?=$lifecell_link?>">www.LifeCellSkin.com</a> and request a trial.
-								They will then process your trial request today, send you a tracking number for your package, and you'll have LifeCell arrive at your door via First Class USPS in just days from now.
-							</p>
-							<p>
-								After using LifeCell for 30 days, we would appreciate for you to send us your feedback, and let us know if we can share your feedback with our readers in a follow up story.
-							</p>
-							<p class="title_tips">
-								Our Top 5 <br>
-								Lifestyle Beauty Tips:
-							</p>
-							<p>
-								<span class="numbered">1.</span>Eat plenty of berries, as they are rich in anti-oxidants. Antioxidants neutralize free radicals in our bodies. Free radicals are known to be one of the primary causes of wrinkle formation.
-							</p>
-							<p>
-								<span class="numbered">2.</span>
-								Try to limit red meat consumption. Red meat has inflammatory properties. Sub-clinical inflammation is known to cause wrinkles.
-							</p>
-							<p>
-								<span class="numbered">3.</span>
-								Drink 8 glasses of water a day.
-							</p>
-							<p>
-								<span class="numbered">4.</span>
-								Eat a diet rich in proteins, green vegetables, and fruits Cut down on carbohydrates. Carbohydrates turn to sugar in our body. Sugar is bad and causes many problems on the face.
-							</p>
-							<p>
-								<span class="numbered">5.</span>
-								Use the best facial products you can find, as what we put on our faces is VERY important. Opt for products that are hypoallergenic, fragrance-free, paraben-free, and endorsed by doctors, like <a href="<?=$lifecell_link?>">LifeCell</a>.
-							</p>
-						</div>
-					</div>
-					<div>
-						<a href="http://www.redcross.org/">
-							<img src="images/american_red_cross.png"/>
-						</a>
-					</div>
-				</div>
-
-			</div>
+			
         </div> <!--end content_wrapper-->
         <div class="clr"></div>                
 		<div id="footer">

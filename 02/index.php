@@ -22,6 +22,12 @@ include('includes/top.php');
                 <!--end popup content css-->
 		<!--end popup-->
                 <script src="scripts/ga-trigger.js" type="text/javascript"></script>
+				<script type="text/javascript">
+					$(function(){
+						// making links to lifecellskin.com to be opened in a new window
+						$('a[href*=products\\/lifecell]').attr('target','_blank');
+					});
+				</script>
 
     </head>
     <body>
